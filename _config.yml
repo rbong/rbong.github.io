@@ -22,6 +22,7 @@ title: rbong's blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "rbong.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  rbong
+author: by Roger Bongers
 
 # Build settings
 theme: minima
