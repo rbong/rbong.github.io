@@ -99,10 +99,10 @@ After we're sure that our branch viewer can handle drawing all different types o
 
 To summarize, we can draw branches using the following basic algorithm:
 
-1. Parse the current commit and its parents.
+1. Parse the current commit and its parent commits.
 2. Draw the current branches and the current commit.
-3. If there are new parents without a branch, place new branches for them.
-4. If there are parents with existing branches, draw them connected to the current branch.
+3. If there are commits without branches, place new branches for them.
+4. If there are parent branches, draw them connected to the current branch.
 
 Next, if we simply record information about which commits go where while we're drawing our output, we should be able to use this information to implement navigation commands for our branch viewer.
 
