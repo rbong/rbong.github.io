@@ -35,11 +35,15 @@ We also have to stick to an output format we know we can parse unless we start g
 
 We might want to add some flexibility to our branch viewer such as custom output formats and multiline output formats.
 
-To do this, we can instruct `git log --graph` to add a bunch of extra tokens into the output. We can then parse the output and get the data we need using these tokens. After that, we can rebuild the output as it should appear to the user.
+To do this:
+
+* We can instruct `git log --graph` to add a bunch of extra tokens into the output.
+* We can parse the output and get the data we need using the tokens.
+* We can rebuild the output as it should appear to the user.
 
 This isn't intended, but it works.
 
-If we draw branches ourselves, we can skip all these steps. We can get all the data we need without using tokens. Instead of reconstructing output, we only need to draw the branches exactly as we want them to appear.
+If we draw branches ourselves, we can skip all these steps. We don't need tokens to find the data we need because there aren't ASCII branches in the way.
 
 It turns out that doing it for ourselves is much faster. To bring us to our next point - it also looks better.
 
