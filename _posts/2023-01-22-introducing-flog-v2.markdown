@@ -59,7 +59,7 @@ When we draw the output ourselves, we can draw branches that stay straight and a
 
 ## How to build a real branch viewer
 
-Now you know about the downsides of "fake" branch viewers, so how do you build a real one?
+Now you know about the downsides of "fake" branch viewers, so how do you build a real one? (If you just want to know about Flog, you can [skip this section](#what-else-can-flog-do).)
 
 First, we shouldn't use `git log --graph`, but we can still use `git log`. This output is much easier to parse because it doesn't have a bunch of branch characters included in the output.
 
@@ -130,6 +130,6 @@ Flog fully integrates with [Fugitive](https://github.com/tpope/vim-fugitive), a 
 
 If all that is not enough, Flog is highly customizable and extensible.
 
-In this article, I just wanted to share everything I learned about how to build a proper branch viewer, but if you'd like to try Flog, [get started here](https://github.com/rbong/vim-flog).
+If you'd like to try Flog, [get started here](https://github.com/rbong/vim-flog).
 
 *Thanks for reading!*
